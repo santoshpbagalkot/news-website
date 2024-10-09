@@ -31,7 +31,7 @@ const NewsFeed = () => {
   }, []);
 
   return (
-    <div className="news-feed">
+    <div>
       {loading && <p>Loading news...</p>}
       {error && <p className="error-message">{error}</p>} {/* Error message */}
       <div style={newsFeedGridStyle}>
