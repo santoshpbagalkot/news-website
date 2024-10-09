@@ -89,6 +89,14 @@ main {
   transform: translateY(-5px); /* Slight lift on hover */
 }
 
+.error-message {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
 
 @keyframes App-logo-spin {
   from {

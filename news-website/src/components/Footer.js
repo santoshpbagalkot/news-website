@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       <p style={copyRightsStyle}>&copy; 2024 React News. All Rights Reserved.</p>
       <p>
-        <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer" style={linkStyle}>Powered by NewsAPI</a>
+        <a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer" style={linkStyle}>Powered by NEWSDATA.IO</a>
       </p>
     </footer>
   );
