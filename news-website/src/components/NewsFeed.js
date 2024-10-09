@@ -10,6 +10,7 @@ const NewsFeed = () => {
   const [error, setError] = useState(null); // State to track errors
 
   useEffect(() => {
+    console.log("Component Mounted, fetching news...");
     setLoading(true);
     setError(null); // Reset error before fetching
     axios.get(`https://newsdata.io/api/1/latest?apikey=pub_55727b99c8698a0e65e9479841ab26143feac`)
