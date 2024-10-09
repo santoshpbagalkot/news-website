@@ -15,7 +15,7 @@ function App() {
       <main>
         <SearchBar /> {/* Add SearchBar under the Header */}
         <Routes>
-          <Route path="/" element={<NewsFeed />} />
+          <Route path="news-website/" element={<NewsFeed />} />
           <Route path="/article/:id" element={<ArticlePage />} />
         </Routes>
         </main>
