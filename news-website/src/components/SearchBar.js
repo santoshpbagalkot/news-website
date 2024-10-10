@@ -9,6 +9,15 @@ const SearchBar = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null); // State to track errors
 
+  const truncateText = (text, maxLength) => {
+    if (text) {
+      if (text.length > maxLength) {
+        return text.substring(0, maxLength) + "...";
+      }
+    }
+    return text;
+  };
+
   const handleSearch = () => {
     setLoading(true);
     setError(null); // Reset error before fetching
@@ -46,7 +55,7 @@ const SearchBar = () => {
           {!loading && !error && articles.map((article, index) => (
             <div key={index} className="card" style={cardStyle}>
               <h2>{article.title}</h2>
-              <p>{article.description}</p>
+              <p>{truncateText(article.description, 100)}</p>
               <p style={infoStyle}>Source: {article.source_name}</p>
               { article.creator && 
                 <p style={infoStyle}>Author: {article.creator}</p>
